@@ -98,7 +98,11 @@ img.small {
 	height: 150px;
 	width: 250px;	
 }
-
+img.small:hover {
+	background-color: #a6856e;
+	opacity: 0.5 !important;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
 /* Type */
 h1{
 	padding: 30px;
@@ -148,7 +152,7 @@ figcaption {
 	font-style: italic;
 	padding: 10px 0px;
 }
-a {
+.link {
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	padding: 20px 0px;
 	display: block;
@@ -156,10 +160,12 @@ a {
 	color: #a6856e;
 	font-size: 16px;
 	font-style: italic;
-	text-decoration: none;
 }
-a:hover {
+.link:hover {
 	color: #dad2ce;
+}
+a{
+	text-decoration: none;
 }
 hr {
 	color: #dad2ce;
